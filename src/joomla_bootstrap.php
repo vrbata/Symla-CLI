@@ -6,7 +6,7 @@ if (PHP_SAPI !== 'cli') {
     die('This is a command line only application.');
 }
 
-$path = SYMLA_PATH_CLI;
+$path = realpath(SYMLA_PATH_CLI . '/../');
 
 if (file_exists($path . '/cli/defines.php')) {
     require_once $path . '/cli/defines.php';
