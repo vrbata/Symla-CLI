@@ -1,0 +1,16 @@
+{
+    "name": "symla/cli",
+    "description": "Simplified creation of cli scripts for Joomla",
+    "authors": [
+        {
+            "name": "Josef Vrbata",
+            "email": "vrbata.josef@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Symla\\Joomla\\Cli\\": "src"
+        }
+    },
+    "require": {}
+}
