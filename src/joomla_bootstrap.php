@@ -13,6 +13,10 @@ if (file_exists($path . '/cli/defines.php')) {
 }
 
 if (!defined('_JDEFINES')) {
+    if ($application === 'administrator') {
+        $path .= '/administrator';
+    }
+
     define('JPATH_BASE', $path);
     require_once JPATH_BASE . '/includes/defines.php';
 }
