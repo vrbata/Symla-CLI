@@ -14,7 +14,7 @@ if (file_exists($path . '/cli/defines.php')) {
 
 if (!defined('_JDEFINES')) {
     if ($application === 'administrator') {
-        $path .= '/administrator';
+        $path .= DIRECTORY_SEPARATOR . 'administrator';
     }
 
     define('JPATH_BASE', $path);
